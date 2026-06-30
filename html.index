@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Credit Book</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="login" id="loginPage">
+
+<h2>Credit Book Login</h2>
+
+<input type="text" id="username" placeholder="Username">
+
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+</div>
+
+<div id="dashboard" style="display:none;">
+
+<h1>Credit Book</h1>
+
+<div class="form">
+
+<input type="text" id="name" placeholder="Customer Name">
+
+<input type="text" id="phone" placeholder="Phone Number">
+
+<input type="number" id="credit" placeholder="Credit Amount">
+
+<button onclick="addCustomer()">Add Customer</button>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Phone</th>
+
+<th>Credit</th>
+
+<th>Add Credit</th>
+
+<th>Receive Money</th>
+
+<th>Delete</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tableBody">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
